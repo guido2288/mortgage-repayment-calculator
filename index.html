@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+<body>
+  <main>
+
+    <div class="app-container">
+
+
+      <div class="form-container">
+
+        <div class="title-container">
+          <h1>Mortgage Calculator</h1>
+          <span>Clear All</span>
+        </div>
+        <form>
+    
+         
+            <label>Mortgage Amount</label>
+    
+            <div class="input-container">
+              <button >£</button>
+              <input type="text" >
+            </div>
+    
+    
+            <div class="input-container-flex">
+  
+              <div>
+                <label>Mortgage Term</label>
+        
+                <div class="input-container">
+                  <input type="text" >
+                  <button id="btn-form">years</button>
+                </div>
+  
+              </div>
+  
+              <div>
+                <label>Interest Rate</label>
+        
+                <div class="input-container">
+                  <input type="text" >
+                  <button id="btn-form">%</button>
+        
+                </div>
+  
+              </div>
+    
+      
+    
+            </div>
+    
+            <div class="mortgage-container">
+              <label>Mortgage Amount</label>
+      
+              <div class="radiosInput-container">
+                <input type="radio" value="Repayment" name="mortgage">Repayment
+              </div>
+      
+      
+              <div class="radiosInput-container">
+                <input type="radio"  value="Interest Only"  name="mortgage">
+                Interest Only
+              </div>
+    
+            </div>
+    
+            <button class="submit-btn"><img src="./assets/images/icon-calculator.svg" alt="icon-calculator"> Calculate Repayments</button>
+    
+    
+    
+        </form>
+
+
+
+      </div>
+   
+
+  
+        <div class="result-container">
+          <img src="./assets/images/illustration-empty.svg" alt="illustration-empty">
+          <h2>Results shown here</h2>
+          <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+  
+        </div>
+  
+  
+   
+    </div>
+
+
+
+
+    
+
+  </main>
+
+</body>
+</html>
