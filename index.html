@@ -17,16 +17,16 @@
 
         <div class="title-container">
           <h1>Mortgage Calculator</h1>
-          <span>Clear All</span>
+          <span id="clear">Clear All</span>
         </div>
-        <form>
+        <form id="form">
     
          
             <label>Mortgage Amount</label>
     
             <div class="input-container">
               <button >£</button>
-              <input type="text" >
+              <input type="number" name="amount" required>
             </div>
     
     
@@ -36,7 +36,7 @@
                 <label>Mortgage Term</label>
         
                 <div class="input-container">
-                  <input type="text" >
+                  <input type="number" name="years" required>
                   <button id="btn-form">years</button>
                 </div>
   
@@ -46,7 +46,7 @@
                 <label>Interest Rate</label>
         
                 <div class="input-container">
-                  <input type="text" >
+                  <input type="number" name="interest" required>
                   <button id="btn-form">%</button>
         
                 </div>
@@ -61,12 +61,12 @@
               <label>Mortgage Amount</label>
       
               <div class="radiosInput-container">
-                <input type="radio" value="Repayment" name="mortgage">Repayment
+                <input type="radio" value="Repayment" name="mortgage" required id="repayment">Repayment
               </div>
       
       
               <div class="radiosInput-container">
-                <input type="radio"  value="Interest Only"  name="mortgage">
+                <input type="radio"  value="Interest Only"  name="mortgage" required id="interestOnly">
                 Interest Only
               </div>
     
@@ -101,6 +101,8 @@
     
 
   </main>
+
+  <script src="./script.js"></script>
 
 </body>
 </html>

@@ -115,6 +115,15 @@ form label{
     border-right: 0;
 }
 
+.input-container input:focus{
+    border: solid 1px  var(--lime);
+    filter: drop-shadow(1px 1px 2.5px var(--lime));
+}
+
+.input-container-flex .input-container input:focus {
+    border: solid 1px var(--lime);
+}
+
 input:hover{
     cursor: pointer;
 }
@@ -212,6 +221,13 @@ form .submit-btn:hover{
     line-height: 150%;
     text-align: center;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
 
 @media (min-width: 768px) {
     .app-container{
