@@ -229,6 +229,31 @@ input[type=number]::-webkit-outer-spin-button {
     }
 input[type=number] { -moz-appearance:textfield; }
 
+.result-display p{
+    text-align: start;
+}
+
+.result{
+    margin-top: 24px;
+    border-top: 3px solid var(--lime);
+    background-color: #0E2431;
+    border-radius: 8px;
+    padding: 24px 16px;
+}
+
+.result-top h2{
+    color: var(--lime);
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--slate-300);
+    padding-bottom: 16px;
+}
+.result-bottom h3{
+    color: var(--white);
+    font-size: 24px;
+    line-height: 125%;
+}
+
 @media (min-width: 768px) {
     .app-container{
         border-radius: 24px;
@@ -255,6 +280,21 @@ input[type=number] { -moz-appearance:textfield; }
     .result-container{
         padding: 40px;
         border-radius: 0 0 24px 24px;
+    }
+    .result{
+        padding: 32px;
+    }
+    
+    .result-top h2{
+        font-size: 56px;
+        padding-bottom: 32px;
+        padding-top: 0;
+    }
+    .result-bottom {
+        padding-top: 32px;
+    }
+    .result-bottom h3{
+        font-size: 24px;
     }
 
 }
